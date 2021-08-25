@@ -1,13 +1,17 @@
 function introduction(name) {
-    console.log(`Hi, my name is ${Josh}.`);
-
-}
-
-introduction(James);
+        return `Hi, my name is ${name}.`;
+} 
 
 function introductionWithLanguage(name, language) {
-    console.log(`Hi, my name is ${name} and I am learning to code in ${language}.`);
+    return `Hi, my name is ${name} and I am learning to program in ${language}.`;
 
 }
 
-introductionWithLanguage(James, Javascript);
+function introductionWithLanguageOptional(name, language) {
+    var chosenLang = "JavaScript";
+    if(language) {
+        chosenLang = language;}
+    return `Hi, my name is ${name} and I am learning to program in ${chosenLang}.`;
+
+}
+
